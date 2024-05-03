@@ -1,0 +1,7 @@
+node_modules
+# Keep environment variables out of version control
+.env
+#node
+node_modules
+src/rutas/Generacion_Constancias.js
+src/rutas/Usuariorutas.js
