@@ -10,7 +10,7 @@ datasource db {
 model Usuarios {
   id          String        @id @default(auto()) @map("_id") @db.ObjectId
   Correo      String
-  Nombre      String        @unique
+  Nombre      String        
   ApellidoP   String
   ApellidoM   String
   FechaN      String
@@ -21,6 +21,6 @@ model Constancias {
   id             String   @id @default(auto()) @map("_id") @db.ObjectId
   Constancia     String
   Indentificador String
-  usuario        Usuarios @relation(fields: [NombreUsuario], references: [Nombre])
-  NombreUsuario  String
+  usuario        Usuarios @relation(fields: [usuarioId], references: [id])
+  usuarioId      String
 }
