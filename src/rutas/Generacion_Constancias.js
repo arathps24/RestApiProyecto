@@ -9,9 +9,9 @@ const prisma = new PrismaClient();
 import pdfkit from "pdfkit";
 import multer from "multer";
 const upload = multer();
-const accountName = "arath2454";
+const accountName = "contenedores";
 const accountKey =
-  "/YBRjQ/Ld9NtXwTjIcGNrToqr8boIDHBWFPhGuYsGl2VuLp8jZgcECuRJgYoNk55n53fZJBgorO++AStl1rSlQ==";
+  "FdsMJ09U52GUCnzPype/RhGlsuDTc3b6E6ZPGEiv/YO+BQVLvat/uqCU7Z1P7yNY1Whn2NtQhja6+AStb02Wfw==";
 const containerName = "constancias";
 const credential = new StorageSharedKeyCredential(accountName, accountKey);
 const blobService = new BlobServiceClient(
@@ -66,3 +66,4 @@ router.post(
 );
 
 export default router;
+
